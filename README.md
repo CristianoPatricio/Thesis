@@ -1,7 +1,7 @@
 # Thesis Repository
 
 **Description:**
- - A collection of papers, code and other things of my research in Zero-Shot Learning.
+ - A collection of papers, code and other things of my research in **Zero-Shot Learning**.
  
 ## Papers
 
