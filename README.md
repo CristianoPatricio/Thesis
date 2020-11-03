@@ -3,6 +3,11 @@
 **Description:**
  - A collection of papers, code and other things of my research in **Zero-Shot Learning**.
  
+## Table of Contents
+
+- [Papers](#papers)
+- [Datasets](#datasets)
+ 
 ## Papers
 
 Paper | Author | Year | Folder
