@@ -1,14 +1,14 @@
-# Thesis Repository
+# :file_folder: Thesis Repository
 
 **Description:**
  - A collection of papers, code and other things of my research in **Zero-Shot Learning**.
  
 ## Table of Contents
 
-- [Papers](#papers)
-- [Datasets](#datasets)
+1. [Papers](#papers)
+2. [Datasets](#datasets)
  
-## Papers
+## :page_with_curl: Papers
 
 Paper | Author | Year | Folder
 :--------- | :-------------: | :-------: | :--------:
