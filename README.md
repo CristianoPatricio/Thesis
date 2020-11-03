@@ -43,5 +43,7 @@ Dataset | No. classes | No. instances | No. attributes | Annotation level | Type
 :link: [**CIFAR-10**](https://www.cs.toronto.edu/~kriz/cifar.html) | 10 | 60000 | None | Per image | General classification
 :link: [**CIFAR-100**](https://www.cs.toronto.edu/~kriz/cifar.html) | 100 | 15339 | None | Per image | General classification
 
+## License
 
+**MIT License**: see the [`LICENSE`](../main/LICENSE) file.
 
