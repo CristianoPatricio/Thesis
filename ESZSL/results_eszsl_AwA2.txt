@@ -1,0 +1,4 @@
+No. samples: 7453
+No. correct samples: 2966
+Percentage: 0.3979605527975312
+Exec. time: 11.518740085760752 min.
