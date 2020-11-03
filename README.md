@@ -45,5 +45,7 @@ Dataset | No. classes | No. instances | No. attributes | Annotation level | Type
 
 ## License
 
+<img src="https://opensource.org/files/osi_keyhole_300X300_90ppi_0.png" alt="Mit" width="32" height="32">
+
 **MIT License**: see the [`LICENSE`](../main/LICENSE) file.
 
