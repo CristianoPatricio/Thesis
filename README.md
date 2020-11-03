@@ -19,3 +19,24 @@ Paper | Author | Year | Folder
 :link: [*Latent Embeddings for Zero-shot Classification*](https://openaccess.thecvf.com/content_cvpr_2016/papers/Xian_Latent_Embeddings_for_CVPR_2016_paper.pdf) | Y. Xian et al. | 2016 | [`LatEm/`](https://github.com/CristianoPatricio/ZSL_Thesis/tree/main/LatEm)
 :link: [*Zero-Shot Learning - A Comprehensive Evaluation of the Good, the Bad and the Ugly*](https://ieeexplore.ieee.org/abstract/document/8413121) | Y. Xian et al. | 2018 | [`Survey ZSL/`](https://github.com/CristianoPatricio/ZSL_Thesis/tree/main/Survey%20ZSL)
 :link: [*A Survey of Zero-Shot Learning: Settings, Methods, and Applications*](http://www.ntulily.org/wp-content/uploads/journal/A_Survey_of_Zero-Shot_Learning_Settings_Methods_and_Applications_accepted.pdf) | W. Wang et al. | 2019 | [`Survey ZSL/`](https://github.com/CristianoPatricio/ZSL_Thesis/tree/main/Survey%20ZSL)
+
+## Datasets
+
+Dataset | No. classes | No. instances | No. attributes | Annotation level | Type
+:------ | :---------: | :-----------: | :------------: | :--------------: | :----:
+:link: [**CUB-200-2011**](http://www.vision.caltech.edu/visipedia/CUB-200-2011.html) | 200 | 11788 | 312 | Per class | Fine-grained classification
+:link: [**Oxford 102 Flower**](https://www.robots.ox.ac.uk/~vgg/data/flowers/102/index.html) | 102 | 8189 | None | None | Fine-grained classification
+:link: [**SUN Attributes**](https://groups.csail.mit.edu/vision/SUN/) | 717 | 14340 | 102 | Per image | Fine-grained classification
+:link: [**Stanford Dogs**](http://vision.stanford.edu/aditya86/ImageNetDogs/main.html) | 120 | 20580 | None | Class labels/Bounding boxes | Fine-grained classification
+:link: [**AwA2**](https://cvml.ist.ac.at/AwA2/) | 50 | 37322 | 85 | Per class | General classification
+:link: [**aPascal-aYahoo**](https://vision.cs.uiuc.edu/attributes/) | 32 | 15339 | 64 | Per image | General classification
+:link: [**PubFig**](https://www.cs.columbia.edu/CAVE/databases/pubfig/) | 200 | 58797 | None | Per image | General classification
+:link: [**PubFig-sub**](https://www.cs.columbia.edu/CAVE/databases/pubfig/) | 8 | 772 | 11 | Per image pairs | General classification
+:link: [**OSR**](http://people.csail.mit.edu/torralba/code/spatialenvelope/) | 8 | 2688 | 6 | Per image pairs | General classification
+:link: [**ImageNet**](http://www.image-net.org/) | 22000 | 15 million | None | Per image | General classification
+:link: [**ImageNet 2012 1K**](https://vision.cs.uiuc.edu/attributes/) | 1000 | 1,2 million | None | Per image | General classification
+:link: [**CIFAR-10**](https://www.cs.toronto.edu/~kriz/cifar.html) | 10 | 60000 | None | Per image | General classification
+:link: [**CIFAR-100**](https://www.cs.toronto.edu/~kriz/cifar.html) | 100 | 15339 | None | Per image | General classification
+
+
+
