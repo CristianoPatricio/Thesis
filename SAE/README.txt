@@ -12,10 +12,10 @@ link: http://cvml.ist.ac.at/AwA2/AwA2-features.zip.
 * All information about AwA2 data set is available at https://cvml.ist.ac.at/AwA2/.
 
 ----------------------------------------------------------------------
-|	       Instructions for preprocessing_data.py	             |
+|	       Instructions for preprocess_data.py	             |
 ----------------------------------------------------------------------
 
-* Run <preprocessing_data.py> script to pickle the 'AwA-features.txt' file 
+* Run <preprocess_data.py> script to pickle the 'AwA-features.txt' file 
 and then compress it into a file with extension '.pbz2'.
 
 * You need to change the line 48 and add the correspondent path where your file 
