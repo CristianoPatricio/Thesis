@@ -8,17 +8,26 @@ E-mail: cristiano.patricio@ubi.pt
 University of Beira Interior, Portugal
 """
 
+import os
 import numpy as np
 from scipy import stats
 from sklearn import preprocessing
 import time
-
+import pickle
 
 #######################################################################
 #   AUXILIARY FUNCTIONS
 #######################################################################
 
-def normalization(X):
+def l2_normalization(X):
+
+    norm = np.sqrt(np.sum(X**2, axis=1))
+    l2norm = X / norm[:,None]
+
+    return l2norm
+
+
+def zscore_normalization(X):
     """
     Compute the z-score over image features X
     :param X: image embedding matrix, each row is an instance
@@ -214,21 +223,27 @@ def get_emb_vectors(stage="train"):
 
 # Loading the AwA dataset
 print('[INFO]: Loading dataset...')
-X = np.loadtxt(
-    '/home/cristianopatricio/Documents/Datasets/Animals_with_Attributes2/Features/ResNet101/AwA2-features.txt')
+
 labels = np.loadtxt(
-    '/home/cristianopatricio/Documents/Datasets/Animals_with_Attributes2/Features/ResNet101/AwA2-labels.txt')
+    '../Datasets/Animals_with_Attributes2/Features/ResNet101/AwA2-labels.txt')
+
+if not os.path.exists('../Datasets/Animals_with_Attributes2/Features/ResNet101/AwA2-features.pkl'):
+    X = np.loadtxt(
+        '../Datasets/Animals_with_Attributes2/Features/ResNet101/AwA2-features.txt')
+    pickle.dump(X, open('../Datasets/Animals_with_Attributes2/Features/ResNet101/AwA2-features.pkl', "wb"))
+else:
+    X = pickle.load(open('../Datasets/Animals_with_Attributes2/Features/ResNet101/AwA2-features.pkl', "rb"))
 
 # Get all classes
 classes = {}
-with open('classes.txt') as f_classes:
+with open('../Datasets/Animals_with_Attributes2/classes.txt') as f_classes:
     lines = f_classes.readlines()
     for l in lines:
         classes[l.strip().split("\t")[1]] = l.strip().split("\t")[0]
 
 # Get training classes
 train_classes = []
-with open("trainclasses.txt") as f_tclasses:
+with open("Data/trainclasses.txt") as f_tclasses:
     lines = f_tclasses.readlines()
     for l in lines:
         classname = l.strip()
@@ -237,7 +252,7 @@ train_classes = np.array(train_classes)
 
 # Get test classes
 test_classes = []
-with open("testclasses.txt") as f:
+with open("Data/testclasses.txt") as f:
     lines = f.readlines()
     for l in lines:
         classname = l.strip()
@@ -248,11 +263,14 @@ test_classes = np.array(test_classes)
 lbl = preprocessing.LabelEncoder()
 y_train = lbl.fit_transform(labels[np.where([labels == i for i in train_classes])[1]])
 X_train = X[np.where([labels == i for i in train_classes])[1]]
-X_train = normalization(X_train)
+X_train = zscore_normalization(X_train)
 
-S = np.loadtxt('/home/cristianopatricio/Documents/Datasets/AwA2-base/Animals_with_Attributes2/predicate-matrix-continuous.txt')
+S = np.loadtxt('../Datasets/Animals_with_Attributes2/predicate-matrix-continuous.txt')
+# l2-normalize the samples (rows).
+S_normalized = preprocessing.normalize(S, norm='l2', axis=1)
+#S_normalized = l2_normalization(S)
 #Y = get_emb_vectors(stage="train").T
-Y = S[[(i-1) for i in train_classes]].T
+Y = S_normalized[[(i-1) for i in train_classes]].T
 
 #######################################################################
 #   TRAINING
@@ -262,7 +280,7 @@ Y = S[[(i-1) for i in train_classes]].T
 # labels = np.random.randint(3, size=20) + 1
 # Y = np.random.randint(3, size=(85, 3))
 learning_rate = 1e-3
-n_epochs = 1
+n_epochs = 10
 K = 6
 
 print("########### TRAINING INFO ###########")
@@ -284,9 +302,9 @@ print("[INFO]: Training time: %.2f minutes" % (training_time))
 lbl = preprocessing.LabelEncoder()
 y_test = lbl.fit_transform(labels[np.where([labels == i for i in test_classes])[1]])
 X_test = X[np.where([labels == i for i in test_classes])[1]]
-X_test = normalization(X_test)
+X_test = zscore_normalization(X_test)
 #Y = get_emb_vectors(stage="test").T
-Y = S[[(i-1) for i in test_classes]].T
+Y = S_normalized[[(i-1) for i in test_classes]].T
 
 #X = np.random.randn(10, 1024)
 #X = normalization(X)
