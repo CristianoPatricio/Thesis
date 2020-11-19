@@ -24,8 +24,18 @@ Paper | Author | Year | Folder
 :link: [*Latent Embeddings for Zero-shot Classification*](https://openaccess.thecvf.com/content_cvpr_2016/papers/Xian_Latent_Embeddings_for_CVPR_2016_paper.pdf) | Y. Xian et al. | 2016 | [`LatEm/`](https://github.com/CristianoPatricio/ZSL_Thesis/tree/main/LatEm)
 :link: [*Semantic Autoencoder for Zero-Shot Learning*](https://openaccess.thecvf.com/content_cvpr_2017/papers/Kodirov_Semantic_Autoencoder_for_CVPR_2017_paper.pdf) | E. Kodirov et al. | 2017 | [`SAE/`](https://github.com/CristianoPatricio/ZSL_Thesis/tree/main/SAE)
 :link: [*Learning a Deep Embedding Model for Zero-Shot Learning*](https://arxiv.org/pdf/1611.05088.pdf) | L. Zhang et al. | 2017 | [`DEM/`](https://github.com/CristianoPatricio/ZSL_Thesis/tree/main/DEM)
-:link: [*Zero-Shot Learning - A Comprehensive Evaluation of the Good, the Bad and the Ugly*](https://ieeexplore.ieee.org/abstract/document/8413121) | Y. Xian et al. | 2018 | [`Survey ZSL/`](https://github.com/CristianoPatricio/ZSL_Thesis/tree/main/Survey%20ZSL)
+:link: [*A Simple Exponential Family Frameworkfor Zero-Shot Learning*](https://arxiv.org/pdf/1707.08040.pdf) | V. Verma et al. | 2018 | -
+:link: [*Feature Generating Networks for Zero-Shot Learning*](https://openaccess.thecvf.com/content_cvpr_2018/papers/Xian_Feature_Generating_Networks_CVPR_2018_paper.pdf) | Y. Xian et al. | 2018 | -
+:link: [*Generalized Zero-Shot Learning with Deep Calibration Network*](https://papers.nips.cc/paper/2018/file/1587965fb4d4b5afe8428a4a024feb0d-Paper.pdf) | Y. Xian et al. | 2018 | -
+:link: [*A Generative Model For Zero Shot Learning Using Conditional Variational Autoencoders*](https://openaccess.thecvf.com/content_cvpr_2018_workshops/papers/w42/Mishra_A_Generative_Model_CVPR_2018_paper.pdf) | A. Mishra et al. | 2018 | -
+:link: [*Zero-Shot Learning - A Comprehensive Evaluation of the Good, the Bad and the Ugly*](https://ieeexplore.ieee.org/abstract/document/8413121) | S. Liu et al. | 2018 | [`Survey ZSL/`](https://github.com/CristianoPatricio/ZSL_Thesis/tree/main/Survey%20ZSL)
+:link: [*f-VAEGAN-D2: A Feature Generating Framework for Any-Shot Learning*](https://openaccess.thecvf.com/content_CVPR_2019/papers/Xian_F-VAEGAN-D2_A_Feature_Generating_Framework_for_Any-Shot_Learning_CVPR_2019_paper.pdf) | Y. Xian et al. | 2019 | -
+:link: [*Semantic-Guided Multi-Attention Localization for Zero-Shot Learning*](https://arxiv.org/pdf/1903.00502.pdf) | Y. Zhu et al. | 2019 | -
 :link: [*A Survey of Zero-Shot Learning: Settings, Methods, and Applications*](http://www.ntulily.org/wp-content/uploads/journal/A_Survey_of_Zero-Shot_Learning_Settings_Methods_and_Applications_accepted.pdf) | W. Wang et al. | 2019 | [`Survey ZSL/`](https://github.com/CristianoPatricio/ZSL_Thesis/tree/main/Survey%20ZSL)
+:link: [*Region Graph Embedding Network for Zero-Shot Learning*](https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123490545.pdf) | G. Xie et al. | 2020 | -
+:link: [*Fine-Grained Generalized Zero-Shot Learning via Dense Attribute-Based Attention*](https://openaccess.thecvf.com/content_CVPR_2020/papers/Huynh_Fine-Grained_Generalized_Zero-Shot_Learning_via_Dense_Attribute-Based_Attention_CVPR_2020_paper.pdf) | D. Huynh et al. | 2020 | -
+:link: [*Generalized Zero-Shot Learning Via Over-Complete Distribution*](https://arxiv.org/pdf/2004.00666.pdf) | R. Keshari et al. | 2020 | -
+
 
 ## 	:books: Datasets
 
