@@ -13,7 +13,7 @@ After perform the step 1. you will be able to see the 'AWA2' folder in your curr
 	or
 	> from AWA2_mat.preprocessing import load_awa2_data
 	
-3. If you download the 'AWA2' dataset, please follow the instructions in the section 3.1, otherwise 
+3. If you downloaded the 'AWA2' dataset, please follow the instructions in the section 3.1, otherwise 
 follow the instructions in the section 3.2.
 
 3.1 [AWA2] 
